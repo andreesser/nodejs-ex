@@ -287,7 +287,15 @@ $ git push</pre>
 
                 <p>Hostname:
                    <span class="code" id="count-value"><%=os.hostname()%></span>
-                   </p>
+                </p>
+
+                <p>Uptime:
+                   <span class="code" id="count-value"><%=os.uptime()%></span>
+                </p>
+
+                <p>Load:
+                   <span class="code" id="count-value"><%=os.loadavg()%></span>
+                </p>
 
                 <p>Page view count:
                 <% if (pageCountMessage) { %>
