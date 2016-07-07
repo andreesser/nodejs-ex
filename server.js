@@ -3,7 +3,8 @@ var express = require('express'),
     fs      = require('fs'),
     app     = express(),
     eps     = require('ejs'),
-    morgan  = require('morgan');
+    morgan  = require('morgan')
+    os      = require('os');
 
 app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'))
